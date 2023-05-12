@@ -1,0 +1,13 @@
+<mat-toolbar id="divgeral" style="background-color: #FFFFFF;">
+    <button class="color" type="button" aria-label="Toggle sidenav" mat-icon-button *ngIf="isHandset$ | async">
+        <mat-icon class="white-icon" aria-label="Side nav toggle icon">menu</mat-icon>
+    </button>
+    <!-- <span class="text-white-p">{{this.cadTitle}}</span> -->
+    <span class="example-spacer"></span>
+    <!-- <button mat-icon-button (click)="drawer.toggle()" class="color">
+        <mat-icon>fullscreen_exit</mat-icon>
+    </button> -->
+    <button mat-icon-button routerLink="" (click)="Logout()" class="color">
+        <mat-icon>exit_to_app</mat-icon>
+    </button>
+</mat-toolbar>

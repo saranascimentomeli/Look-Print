@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="form">
+        <label for="descricao">Descrição:</label>
+        <input type="text" [(ngModel)]="this.layout.descricao" name="descricao">
+        <label for="imagem" *ngIf="!data">Imagem:</label>
+        <input type="file" [(ngModel)]="imagem" name="imagem" (change)="selecionarArquivo($event)" *ngIf="!data">
+        <div class="button-group">
+            <button (click)="upload()" *ngIf="!data; else editarLayout">Criar Layout</button>
+            <button class="excluir-btn" (click)="excluir()" *ngIf="data">Excluir</button>
+            <ng-template #editarLayout>
+                <button (click)="editar()">Editar Layout</button>
+            </ng-template>
+        </div>
+    </div>
+</div>

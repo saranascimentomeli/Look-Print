@@ -1,0 +1,95 @@
+<div id="dialog-box-container" hidden="true" style="position: absolute; top:50%; z-index: 1;">
+    <div id="header">
+        <div id="title-divs">
+            <h5 id="title">Status</h5>
+            <h5 id="StatusImp">Em aguardo</h5>
+            <h5 id="status-description" style="color:red">Aqui está a descrição do status</h5>
+        </div>
+    </div>
+    <div class="row">
+        <h5 id="ip"></h5>
+    </div>
+    <div class="row">
+        <div>
+            <h5 id="potencia"></h5>
+        </div>
+        <div>
+            <h5 id="velocidade"></h5>
+        </div>
+    </div>
+    <!-- Adicionei um elemento canvas para desenhar o gráfico -->
+    <canvas id="pareto-chart"></canvas>
+</div>
+
+
+<div class="header-container">
+    <div class="header-cell add-cell-container">
+        <div class="add-cell">Adicionar Bancada</div>
+        <div class="add-button-container">
+            <button class="circle-button-cinza"></button>
+        </div>
+    </div>
+    <div class="header-cell add-cell-container">
+        <div class="add-cell">Adicionar Layout</div>
+        <div class="row">
+            <div class="col">
+                <div class="add-button-container">
+                    <button class="circle-button-lay" (click)="abrirNewLayout()"></button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="combobox-container">
+                    <select [(ngModel)]="valorSelecionado" (change)="carregarImagem()">
+                        <option value="">Novo Layout</option>
+                        <option *ngFor="let opcao of opcoes" [value]="opcao.id">{{ opcao.descricao }}</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="header-cell add-cell-container">
+        <div class="add-cell">Ultima Atualização</div>
+        <div class="add-button-container">
+            <div id="Atualização"></div>
+        </div>
+    </div>
+
+    <div class="header-cell legendas-cell-container">
+
+        <div class="legendas-cell">Legendas</div>
+        <div class="legendas-buttons-container">
+            <div class="legendas-button-container">
+                <button class="circle-button-cinza"><span>Sem impressora vinculada</span></button>
+            </div>
+            <div class="legendas-button-container">
+                <button class="circle-button-verde"><span>Funcionado</span></button>
+            </div>
+            <div class="legendas-button-container">
+                <button class="circle-button-azul"><span>Divergência na Configuração</span></button>
+            </div>
+            <div class="legendas-button-container">
+                <button class="circle-button-vermelho"><span>Impressora com problema</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row" style="width: 50px;">
+    <button class="circle-button-cinza" [style.top.px]="y" [style.left.px]="x" style="position: absolute;"
+        (mousedown)="onMouseDown($event)" (mousemove)="onMouseMove($event)" (mouseup)="onMouseUp() "></button>
+</div>
+
+
+
+<div #container class="container-map h-100 mapa">
+  
+
+    <div class="" (window:resize)="minhaFuncaoDeRedimensionamento()" #heatmapContainer id="heatmapContainer"
+        style="background-repeat: no-repeat; background-size: cover;">
+        <canvas style="width: 100%; height: 100%;" id="myCanvas" #canvas></canvas>
+    </div>
+  
+</div>

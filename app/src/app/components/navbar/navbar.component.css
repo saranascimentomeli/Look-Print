@@ -1,0 +1,23 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.img-perfil {
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.name-perfil {
+    padding: 10px;
+    font-weight: bold;
+    font-size: small;
+}
+
+mat-toolbar {
+    background-color: #AADB1D !important;
+}
+
+.color {
+    background-color: #AADB1D;
+    border: 0px;
+}

@@ -1,0 +1,91 @@
+<div class="container-fluid h-100 p-0 m-0">
+    <div class="row w-100 h-100 m-0">
+        <div class="col-sm-5 h-100 col-md-8 col-lg-8 m-0 p-0">
+            <div class="pw  h-100">
+            </div>
+        </div>
+        <div class="col-sm-7 h-100 col-md-4 col-lg-4 m-0 p-0">
+            <div class="card bg-white h-100 w-100 shadow p-3 mb-5 bg-white rounded">
+                <div class="header">
+                    <div class="row" style="margin: 8px;">
+                        <div class="col">
+                            <img src="assets/img/logo__small@2x.png" width="50vh" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+                <div class="login">
+
+                    <div class="card-body h-100">
+                        <div class="row">
+                            <div class="col text-center">
+                                <p style="font-size: 2.5vw;">{{this.loginTitle}}</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col">
+                                <form [formGroup]="formCliente">
+                                    <div class="form-row mb-3">
+                                        <div class="form-group">
+                                            <label class="mb-2" for="exampleInputEmail1">Usuário</label>
+                                            <input type="email" class="form-control" id="usuario"
+                                                aria-describedby="usuariohelp" placeholder="type user"
+                                                formControlName="name">
+                                        </div>
+                                    </div>
+                                    <div class="form-row mb-3">
+                                        <div class="form-group">
+                                            <label class="mb-2" for="exampleInputPassword1">Senha</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                                placeholder="type password" formControlName="passwd">
+                                        </div>
+                                    </div>
+                                    <div class="form-row mb-3">
+                                        <label class="mb-2" for="exampleInputPassword1">Cad</label>
+                                        <select value={{this.Cadselecionado}} (change)="onChange($event)"
+                                            class="form-control" matNativeControl required>
+                                            <option value="BRSP04">BRSP04</option>
+                                            <option value="BRRC01">BRRC01</option>
+                                            <option value="BRSP03">BRSP03</option>
+                                            <option value="BRSP02">BRSP02</option>
+                                            <option value="BRSC02">BRSC02</option>
+                                            <option value="BAH01">BAH01</option>
+
+                                        </select>
+
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col text-center">
+                                            <p style="color: red;"></p>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <button type="button" (click)="login()"
+                                                class="float-right btn btn-primary">Entrar</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col" align="center">
+                                            <p style="color: red;">{{this.status}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col" align="end">
+                                            <p>Versão {{this.versao}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col" align="end">
+                                            <p style="color: red;"></p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

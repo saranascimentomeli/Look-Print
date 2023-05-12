@@ -1,0 +1,10 @@
+<div class="container" hidden="false">
+    <h2>Insira o código QR</h2>
+    <p>{{descricao}}:</p>
+    <div class="input-wrapper">
+        <div *ngIf="etapaAtual === 2" class="codigo-impressora">{{codigoImpressora}}</div>
+        <input type="text" [(ngModel)]="qrcode" (keyup)="proximaEtapa($event)" #qrcodeInput placeholder="Código QR">
+
+        <button *ngIf="etapaAtual === 2" class="btn-voltar" (click)="voltarEtapa()">Voltar</button>
+    </div>
+</div>

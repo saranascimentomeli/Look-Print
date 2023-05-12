@@ -1,0 +1,29 @@
+<div class="container-fluid">
+    <mat-card>
+        <mat-card-content class="w-100">
+            <div class="row">
+                <div class="col">
+                    <mat-form-field appearance="outline">
+                        <mat-label>ip</mat-label>
+                        <input [(ngModel)]="this.impressora.ip" type="text" matInput placeholder="IP">
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Empressora</mat-label>
+                        <input [(ngModel)]="this.impressora.impressora" type="text" matInput placeholder="Impressora">
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col text-center">
+                    <button (click)="SalvarUser()" mat-raised-button color="primary">Salvar</button>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

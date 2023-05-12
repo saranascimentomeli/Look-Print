@@ -1,0 +1,35 @@
+<div class="container-fluid">
+    <mat-card>
+        <mat-card-content class="w-100">
+            <div class="row">
+                <div class="col">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Username</mat-label>
+                        <input [(ngModel)]="this.user.name" type="text" matInput placeholder="Username">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Nome</mat-label>
+                        <input [(ngModel)]="this.user.email" type="email" matInput placeholder="Nome">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Senha</mat-label>
+                        <input [(ngModel)]="this.user.password" type="password" matInput placeholder="Senha">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <button (click)="SalvarUser()" mat-raised-button color="primary">Salvar</button>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

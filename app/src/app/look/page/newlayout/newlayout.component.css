@@ -1,0 +1,142 @@
+div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+input[type="file"] {
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0062cc;
+}
+
+input[type="file"] {
+    width: 100%;
+}
+
+/* Estilo geral */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo do formulário */
+.form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.form input[type="file"] {
+    display: block;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) inset;
+}
+
+.form input[type="file"]:hover {
+    cursor: pointer;
+}
+
+.form textarea,
+.form input[type="file"] {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.4;
+    resize: vertical;
+}
+
+.form button[type="submit"] {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.form button[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+.form p.error {
+    margin-top: 5px;
+    color: #ff0000;
+    font-weight: 600;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.excluir-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.excluir-btn:hover {
+    background-color: darkred;
+}
+
+.button-group button:not(:last-child) {
+    margin-right: 8px;
+}

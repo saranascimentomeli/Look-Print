@@ -1,0 +1,30 @@
+html,
+body {
+    height: 100% !important;
+}
+
+.prioridade {
+    background-color: #fa0000 !important;
+    width: 80%;
+    height: 4vw;
+    margin: 10px;
+    line-height: 4vw;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px -5px #000000;
+    box-shadow: 0px 0px 10px -5px #000000;
+    animation: blink-animation 3s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}

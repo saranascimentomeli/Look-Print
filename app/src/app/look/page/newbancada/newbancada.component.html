@@ -1,0 +1,44 @@
+<div class="container-fluid">
+    <mat-card>
+        <mat-card-content class="w-100">
+            <!-- <div class="row">
+                <div class="col">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Layout</mat-label>
+                        <input [(ngModel)]="this.bancadas.Layout" type="text" matInput placeholder="Layout">
+                    </mat-form-field>
+                </div>
+            </div> -->
+
+            <div class="row">
+                <div class="col">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Bancada</mat-label>
+                        <input [(ngModel)]="this.bancadas.Bancada" type="text" matInput placeholder="Bancada">
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Impressora</mat-label>
+                        <input [(ngModel)]="this.bancadas.Impressora" type="text" matInput placeholder="Impressora">
+                    </mat-form-field>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <div class="col text-center">
+                        <button (click)="confirmarExclusao()" mat-raised-button color="red">Excluir</button>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <button (click)="SalvarUser()" mat-raised-button color="primary">Salvar</button>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

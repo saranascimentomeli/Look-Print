@@ -1,0 +1,1138 @@
+<hmtl lang="pt-BR">
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="teste.css" />
+    </head>
+
+    <body style="background-color: #e2e2e2">
+
+
+        <div class="filters-section" style="background-color: #e2e2e2; margin-left: 20px;margin-right:20px;">
+            <div class="dropdown-select"><span class="dropdown-select__label">Datas:</span>
+                <div
+                    class="andes-dropdown andes-dropdown--standalone dropdown-select__dropdown andes-dropdown--compact">
+                    <button type="button" class="andes-dropdown__trigger" aria-label="Hoje - 23/12/2022"
+                        aria-expanded="false" aria-haspopup="listbox" aria-invalid="false"><span
+                            class="andes-dropdown__display-values">Hoje - 23/12/2022</span><svg
+                            class="andes-dropdown__standalone-arrow" width="12" height="12" viewBox="0 0 12 12"
+                            aria-hidden="true">
+                            <path fill-opacity=".45" d="M6 7.057L9.352 3.705 10.148 4.5 6 8.648 1.852 4.5 2.648 3.705z">
+                            </path>
+                        </svg></button>
+                </div>
+            </div>
+            <div class="sla-report">
+                <div class="sla-report__percentage">
+                    <div class="circleChart"><svg viewBox="0 0 36 36">
+                            <path class="circle-bg" d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+            a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                            <path style="stroke:#3483fa" class="circle" stroke-dasharray="59.8, 100" d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+            a 15.9155 15.9155 0 0 1 0 -31.831"></path><text x="18" y="20.35" class="percentage"
+                                style="fill:#3483fa">59.8<!-- -->%</text>
+                        </svg></div>
+                </div>
+                <div class="sla-report__title">
+                    <h2 class="sla-report__title__main">SLA total:</h2><span
+                        class="sla-report__title__percentage">59.8%</span>
+                </div><svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                    <path fill="none" fill-rule="evenodd" stroke="#929292" stroke-width="1.5" d="M11 4L6 9 1 4"></path>
+                </svg>
+                <div class="totals"><span class="totals__item"><span class="totals__item__label">Ord.
+                            procesadas:</span><span class="totals__item__quantity">68194</span></span><span
+                        class="totals__item"><span class="totals__item__label">Ord. pendientes:</span><span
+                            class="totals__item__quantity">45729</span></span><span class="totals__item"><span
+                            class="totals__item__label">Ord. falladas:</span><span
+                            class="totals__item__quantity">27</span></span><span class="totals__item"><span
+                            class="totals__item__label">Ord. vencidas:</span><span
+                            class="totals__item__quantity">1123</span></span></div>
+            </div>
+           
+           
+           
+           
+           
+            <div class="remaining-time-filter">
+                <p class="remaining-time-filter__title">Pedidos por tempo restante ao ETD</p>
+                <div class="remaining-time-filter__filters"><button class="remaining-time-filter__filters__filter">
+                        <div class="remaining-time-filter__filters__filter__border-left in_time"
+                            style="margin-right: 5px;"></div>
+                        <p class="remaining-time-filter__filters__filter__quantity in_time">29071</p>
+                        <p class="remaining-time-filter__filters__filter__label">Mais de 4 horas</p>
+                        <p class="remaining-time-filter__filters__filter__description"></p>
+                    </button><button class="remaining-time-filter__filters__filter">
+                        <div class="remaining-time-filter__filters__filter__border-left warning"></div>
+                        <p class="remaining-time-filter__filters__filter__quantity warning">6909</p>
+                        <p class="remaining-time-filter__filters__filter__label">Entre 4 e 2 horas</p>
+                        <p class="remaining-time-filter__filters__filter__description"></p>
+                    </button><button class="remaining-time-filter__filters__filter">
+                        <div class="remaining-time-filter__filters__filter__border-left danger"></div>
+                        <p class="remaining-time-filter__filters__filter__quantity danger">9481</p>
+                        <p class="remaining-time-filter__filters__filter__label">Menos de 2 horas</p>
+                        <p class="remaining-time-filter__filters__filter__description"></p>
+                    </button><button class="remaining-time-filter__filters__filter">
+                        <div class="remaining-time-filter__filters__filter__border-left past_due"></div>
+                        <p class="remaining-time-filter__filters__filter__quantity past_due">68462</p>
+                        <p class="remaining-time-filter__filters__filter__label">Finalizadas</p>
+                        <p class="remaining-time-filter__filters__filter__description"></p>
+                    </button></div>
+            </div>
+            <!-- <div class="radio-group-filter inline-mode"><span>Agrupar por:</span>
+                <div class="andes-radioGroup" role="radiogroup" aria-labelledby="">
+                    <div class="andes-radio andes-radio--default andes-radio--inline">
+                        <div class="andes-radio-element"><input type="radio" class="andes-radio__input"
+                                id="id-canalizationGrouping-carrier" name="canalizationGrouping" value="carrier"
+                                checked="">
+                            <div class="andes-radio__background">
+                                <div class="andes-radio__outer-circle"></div>
+                                <div class="andes-radio__inner-circle"></div>
+                            </div>
+                        </div><label class="andes-radio__label"
+                            for="id-canalizationGrouping-carrier"><span>Carrier</span></label>
+                    </div>
+                    <div class="andes-radio andes-radio--default andes-radio--inline">
+                        <div class="andes-radio-element"><input type="radio" class="andes-radio__input"
+                                id="id-canalizationGrouping-process_path" name="canalizationGrouping"
+                                value="process_path">
+                            <div class="andes-radio__background">
+                                <div class="andes-radio__outer-circle"></div>
+                                <div class="andes-radio__inner-circle"></div>
+                            </div>
+                        </div><label class="andes-radio__label" for="id-canalizationGrouping-process_path"><span>Process
+                                Path</span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown-select"><span class="dropdown-select__label">Ver:</span>
+                <div
+                    class="andes-dropdown andes-dropdown--standalone dropdown-select__dropdown andes-dropdown--compact">
+                    <button type="button" class="andes-dropdown__trigger" aria-label="Pedidos" aria-expanded="false"
+                        aria-haspopup="listbox" aria-invalid="false"><span
+                            class="andes-dropdown__display-values">Pedidos</span><svg
+                            class="andes-dropdown__standalone-arrow" width="12" height="12" viewBox="0 0 12 12"
+                            aria-hidden="true">
+                            <path fill-opacity=".45" d="M6 7.057L9.352 3.705 10.148 4.5 6 8.648 1.852 4.5 2.648 3.705z">
+                            </path>
+                        </svg></button>
+                </div>
+            </div> -->
+
+            <div class="totals"><span class="totals__item"><span class="totals__item__label">Pedidos totais:</span><span
+                        class="totals__item__quantity">117069</span></span><span class="totals__item"><span
+                        class="totals__item__label">Pedidos cancelados:</span><span
+                        class="totals__item__quantity">2964</span></span><span class="totals__item"><span
+                        class="totals__item__label">Pedidos unfulfillables:</span><span
+                        class="totals__item__quantity">182</span></span></div>
+        </div>
+
+
+
+
+        <div class="dashboard-container" style="background-color: #e2e2e2; margin-left: 20px;margin-right:20px;">
+            <div class="sla-table">
+                <div class="etd-table">
+                    <div class="etd-table__row header">
+                        <div class="etd-table__header main-column first_column" align="center">Horário de expedição
+                        </div>
+                        <div class="etd-table__header sub-grid performance" align="center"><span
+                                class="main-column"><span class="label">Performance</span></span><span
+                                class="sub-grid__container"><span class="sub-grid__child" style="width:25%"><span
+                                        class="label">Tempo
+                                        Restante</span></span><span class="sub-grid__child" style="width:25%"><span
+                                        class="label">Pedidos Pendentes</span></span><span class="sub-grid__child"
+                                    style="width:25%"><span class="label">Pedidos Processados</span></span><span
+                                    class="sub-grid__child" style="width:25%"><span
+                                        class="label">SLA</span></span></span>
+                        </div>
+                    </div>
+                    <div class="etd-table__body sla-expired-orders">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column first_column sla-expired-orders__column">
+                                <div class="andes-badge andes-badge--pill andes-badge--error andes-badge--standard andes-badge--error--quiet andes-badge--large"
+                                    aria-label="1 mes(es) de retraso">
+                                    <p class="andes-badge__content">1 mes(es) de retraso</p>
+                                </div><a
+                                    class="andes-typography sla-expired-orders__etd-units-link andes-typography--type-body andes-typography--size-m andes-typography--color-link"
+                                    href="/reports/units?etd_to=2022-12-22T23:59:59&amp;etd_from=2022-11-01T01:00:00&amp;status=pending,to_route,to_pick,picking,picked,to_sort,sorted,to_group,grouping,grouped,to_pack,packing,packed,to_document,documented,to_expedition,to_dispatch,to_out,paused,temp_unavailable,to_restock,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD">Analizar</a>
+                            </div>
+                            <div class="etd-table__column sub-grid sla-expired-orders__column"><span
+                                    class="sub-grid__container"><span class="sla-expired-orders__performance"><span
+                                            class="andes-typography sla-expired-orders__performance__unprocessed andes-typography--type-body andes-typography--size-m andes-typography--color-primary">1245</span></span><span
+                                        class="sla-expired-orders__performance"><span
+                                            class="andes-typography andes-typography--type-body andes-typography--size-m andes-typography--color-primary">151</span></span><span
+                                        class="sla-expired-orders__performance sla-column"><span
+                                            class="andes-typography andes-typography--type-body andes-typography--size-m andes-typography--color-primary">10.81%</span></span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column first_column"><button type="button"
+                                    class="andes-button dropdown-button andes-button--small andes-button--transparent"><span
+                                        class="andes-button__content"><svg class="arrow"
+                                            xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12">
+                                            <path fill="none" fill-rule="evenodd" stroke="#3483FA" stroke-width="1.5"
+                                                d="M11 4L6 9 1 4"></path>
+                                        </svg></span></button>00:00hr</div>
+                            <div class="etd-table__column performance sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child remaining_time disabled" style="width:25%"><span
+                                            class="sub-grid__child__content disabled">Finalizado</span></span><span
+                                        class="sub-grid__child pending_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">112</span></span><span
+                                        class="sub-grid__child processed_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">22731</span></span><span
+                                        class="sub-grid__child sla disabled" style="width:25%"><span
+                                            class="sub-grid__child__content disabled">99.51%</span></span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column first_column"><button type="button"
+                                    class="andes-button dropdown-button andes-button--small andes-button--transparent"><span
+                                        class="andes-button__content"><svg class="arrow"
+                                            xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12">
+                                            <path fill="none" fill-rule="evenodd" stroke="#3483FA" stroke-width="1.5"
+                                                d="M11 4L6 9 1 4"></path>
+                                        </svg></span></button>01:00hr</div>
+                            <div class="etd-table__column performance sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child remaining_time disabled" style="width:25%"><span
+                                            class="sub-grid__child__content disabled">Finalizado</span></span><span
+                                        class="sub-grid__child pending_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">27</span></span><span
+                                        class="sub-grid__child processed_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">8434</span></span><span
+                                        class="sub-grid__child sla disabled" style="width:25%"><span
+                                            class="sub-grid__child__content disabled">99.66%</span></span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column first_column"><button type="button"
+                                    class="andes-button dropdown-button andes-button--small andes-button--transparent"><span
+                                        class="andes-button__content"><svg class="arrow"
+                                            xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12">
+                                            <path fill="none" fill-rule="evenodd" stroke="#3483FA" stroke-width="1.5"
+                                                d="M11 4L6 9 1 4"></path>
+                                        </svg></span></button>02:00hr</div>
+                            <div class="etd-table__column performance sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child remaining_time disabled" style="width:25%"><span
+                                            class="sub-grid__child__content disabled">Finalizado</span></span><span
+                                        class="sub-grid__child pending_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">37</span></span><span
+                                        class="sub-grid__child processed_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">9516</span></span><span
+                                        class="sub-grid__child sla disabled" style="width:25%"><span
+                                            class="sub-grid__child__content disabled">99.61%</span></span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column first_column"><button type="button"
+                                    class="andes-button dropdown-button andes-button--small andes-button--transparent"><span
+                                        class="andes-button__content"><svg class="arrow"
+                                            xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12">
+                                            <path fill="none" fill-rule="evenodd" stroke="#3483FA" stroke-width="1.5"
+                                                d="M11 4L6 9 1 4"></path>
+                                        </svg></span></button>03:00hr</div>
+                            <div class="etd-table__column performance sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child remaining_time disabled" style="width:25%"><span
+                                            class="sub-grid__child__content disabled">Finalizado</span></span><span
+                                        class="sub-grid__child pending_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">140</span></span><span
+                                        class="sub-grid__child processed_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">20277</span></span><span
+                                        class="sub-grid__child sla disabled" style="width:25%"><span
+                                            class="sub-grid__child__content disabled">99.31%</span></span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column first_column"><button type="button"
+                                    class="andes-button dropdown-button andes-button--small andes-button--transparent"><span
+                                        class="andes-button__content"><svg class="arrow"
+                                            xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12">
+                                            <path fill="none" fill-rule="evenodd" stroke="#3483FA" stroke-width="1.5"
+                                                d="M11 4L6 9 1 4"></path>
+                                        </svg></span></button>06:00hr</div>
+                            <div class="etd-table__column performance sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child remaining_time disabled" style="width:25%"><span
+                                            class="sub-grid__child__content disabled">Finalizado</span></span><span
+                                        class="sub-grid__child pending_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">1</span></span><span
+                                        class="sub-grid__child processed_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">909</span></span><span
+                                        class="sub-grid__child sla disabled" style="width:25%"><span
+                                            class="sub-grid__child__content disabled">99.89%</span></span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column first_column"><button type="button"
+                                    class="andes-button dropdown-button andes-button--small andes-button--transparent"><span
+                                        class="andes-button__content"><svg class="arrow"
+                                            xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12">
+                                            <path fill="none" fill-rule="evenodd" stroke="#3483FA" stroke-width="1.5"
+                                                d="M11 4L6 9 1 4"></path>
+                                        </svg></span></button>07:00hr</div>
+                            <div class="etd-table__column performance sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child remaining_time disabled" style="width:25%"><span
+                                            class="sub-grid__child__content disabled">Finalizado</span></span><span
+                                        class="sub-grid__child pending_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">2</span></span><span
+                                        class="sub-grid__child processed_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">304</span></span><span
+                                        class="sub-grid__child sla disabled" style="width:25%"><span
+                                            class="sub-grid__child__content disabled">99.35%</span></span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column first_column"><button type="button"
+                                    class="andes-button dropdown-button andes-button--small andes-button--transparent"><span
+                                        class="andes-button__content"><svg class="arrow"
+                                            xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12">
+                                            <path fill="none" fill-rule="evenodd" stroke="#3483FA" stroke-width="1.5"
+                                                d="M11 4L6 9 1 4"></path>
+                                        </svg></span></button>08:00hr</div>
+                            <div class="etd-table__column performance sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child remaining_time disabled" style="width:25%"><span
+                                            class="sub-grid__child__content disabled">Finalizado</span></span><span
+                                        class="sub-grid__child pending_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">9</span></span><span
+                                        class="sub-grid__child processed_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">1662</span></span><span
+                                        class="sub-grid__child sla disabled" style="width:25%"><span
+                                            class="sub-grid__child__content disabled">99.46%</span></span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column first_column"><button type="button"
+                                    class="andes-button dropdown-button andes-button--small andes-button--transparent"><span
+                                        class="andes-button__content"><svg class="arrow"
+                                            xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12">
+                                            <path fill="none" fill-rule="evenodd" stroke="#3483FA" stroke-width="1.5"
+                                                d="M11 4L6 9 1 4"></path>
+                                        </svg></span></button>09:00hr</div>
+                            <div class="etd-table__column performance sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child remaining_time danger" style="width:25%"><span
+                                            class="sub-grid__child__content danger">00:31hr</span></span><span
+                                        class="sub-grid__child pending_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">2006</span></span><span
+                                        class="sub-grid__child processed_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">2301</span></span><span
+                                        class="sub-grid__child sla danger" style="width:25%"><span
+                                            class="sub-grid__child__content danger">53.56%</span></span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column first_column"><button type="button"
+                                    class="andes-button dropdown-button andes-button--small andes-button--transparent"><span
+                                        class="andes-button__content"><svg class="arrow"
+                                            xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12">
+                                            <path fill="none" fill-rule="evenodd" stroke="#3483FA" stroke-width="1.5"
+                                                d="M11 4L6 9 1 4"></path>
+                                        </svg></span></button>12:00hr</div>
+                            <div class="etd-table__column performance sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child remaining_time warning" style="width:25%"><span
+                                            class="sub-grid__child__content warning">03:31hr</span></span><span
+                                        class="sub-grid__child pending_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">923</span></span><span
+                                        class="sub-grid__child processed_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">3</span></span><span
+                                        class="sub-grid__child sla danger" style="width:25%"><span
+                                            class="sub-grid__child__content danger">0.32%</span></span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column first_column"><button type="button"
+                                    class="andes-button dropdown-button andes-button--small andes-button--transparent"><span
+                                        class="andes-button__content"><svg class="arrow"
+                                            xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12">
+                                            <path fill="none" fill-rule="evenodd" stroke="#3483FA" stroke-width="1.5"
+                                                d="M11 4L6 9 1 4"></path>
+                                        </svg></span></button>13:00hr</div>
+                            <div class="etd-table__column performance sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child remaining_time success" style="width:25%"><span
+                                            class="sub-grid__child__content success">04:31hr</span></span><span
+                                        class="sub-grid__child pending_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">8409</span></span><span
+                                        class="sub-grid__child processed_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">10</span></span><span
+                                        class="sub-grid__child sla danger" style="width:25%"><span
+                                            class="sub-grid__child__content danger">0.12%</span></span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column first_column"><button type="button"
+                                    class="andes-button dropdown-button andes-button--small andes-button--transparent"><span
+                                        class="andes-button__content"><svg class="arrow"
+                                            xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12">
+                                            <path fill="none" fill-rule="evenodd" stroke="#3483FA" stroke-width="1.5"
+                                                d="M11 4L6 9 1 4"></path>
+                                        </svg></span></button>14:00hr</div>
+                            <div class="etd-table__column performance sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child remaining_time success" style="width:25%"><span
+                                            class="sub-grid__child__content success">05:31hr</span></span><span
+                                        class="sub-grid__child pending_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">6640</span></span><span
+                                        class="sub-grid__child processed_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">1</span></span><span
+                                        class="sub-grid__child sla danger" style="width:25%"><span
+                                            class="sub-grid__child__content danger">0.02%</span></span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column first_column"><button type="button"
+                                    class="andes-button dropdown-button andes-button--small andes-button--transparent"><span
+                                        class="andes-button__content"><svg class="arrow"
+                                            xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12">
+                                            <path fill="none" fill-rule="evenodd" stroke="#3483FA" stroke-width="1.5"
+                                                d="M11 4L6 9 1 4"></path>
+                                        </svg></span></button>16:00hr</div>
+                            <div class="etd-table__column performance sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child remaining_time success" style="width:25%"><span
+                                            class="sub-grid__child__content success">07:31hr</span></span><span
+                                        class="sub-grid__child pending_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">1681</span></span><span
+                                        class="sub-grid__child processed_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">2</span></span><span
+                                        class="sub-grid__child sla danger" style="width:25%"><span
+                                            class="sub-grid__child__content danger">0.12%</span></span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column first_column"><button type="button"
+                                    class="andes-button dropdown-button andes-button--small andes-button--transparent"><span
+                                        class="andes-button__content"><svg class="arrow"
+                                            xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12">
+                                            <path fill="none" fill-rule="evenodd" stroke="#3483FA" stroke-width="1.5"
+                                                d="M11 4L6 9 1 4"></path>
+                                        </svg></span></button>17:00hr</div>
+                            <div class="etd-table__column performance sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child remaining_time success" style="width:25%"><span
+                                            class="sub-grid__child__content success">08:31hr</span></span><span
+                                        class="sub-grid__child pending_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">3786</span></span><span
+                                        class="sub-grid__child processed_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">2</span></span><span
+                                        class="sub-grid__child sla danger" style="width:25%"><span
+                                            class="sub-grid__child__content danger">0.05%</span></span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column first_column"><button type="button"
+                                    class="andes-button dropdown-button andes-button--small andes-button--transparent"><span
+                                        class="andes-button__content"><svg class="arrow"
+                                            xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12">
+                                            <path fill="none" fill-rule="evenodd" stroke="#3483FA" stroke-width="1.5"
+                                                d="M11 4L6 9 1 4"></path>
+                                        </svg></span></button>18:00hr</div>
+                            <div class="etd-table__column performance sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child remaining_time success" style="width:25%"><span
+                                            class="sub-grid__child__content success">09:31hr</span></span><span
+                                        class="sub-grid__child pending_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">4443</span></span><span
+                                        class="sub-grid__child processed_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">4</span></span><span
+                                        class="sub-grid__child sla danger" style="width:25%"><span
+                                            class="sub-grid__child__content danger">0.09%</span></span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column first_column"><button type="button"
+                                    class="andes-button dropdown-button andes-button--small andes-button--transparent"><span
+                                        class="andes-button__content"><svg class="arrow"
+                                            xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12">
+                                            <path fill="none" fill-rule="evenodd" stroke="#3483FA" stroke-width="1.5"
+                                                d="M11 4L6 9 1 4"></path>
+                                        </svg></span></button>18:30hr</div>
+                            <div class="etd-table__column performance sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child remaining_time success" style="width:25%"><span
+                                            class="sub-grid__child__content success">10:01hr</span></span><span
+                                        class="sub-grid__child pending_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">2919</span></span><span
+                                        class="sub-grid__child processed_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">7</span></span><span
+                                        class="sub-grid__child sla danger" style="width:25%"><span
+                                            class="sub-grid__child__content danger">0.24%</span></span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column first_column"><button type="button"
+                                    class="andes-button dropdown-button andes-button--small andes-button--transparent"><span
+                                        class="andes-button__content"><svg class="arrow"
+                                            xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12">
+                                            <path fill="none" fill-rule="evenodd" stroke="#3483FA" stroke-width="1.5"
+                                                d="M11 4L6 9 1 4"></path>
+                                        </svg></span></button>19:00hr</div>
+                            <div class="etd-table__column performance sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child remaining_time success" style="width:25%"><span
+                                            class="sub-grid__child__content success">10:31hr</span></span><span
+                                        class="sub-grid__child pending_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">4790</span></span><span
+                                        class="sub-grid__child processed_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">3</span></span><span
+                                        class="sub-grid__child sla danger" style="width:25%"><span
+                                            class="sub-grid__child__content danger">0.06%</span></span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column first_column"><button type="button"
+                                    class="andes-button dropdown-button andes-button--small andes-button--transparent"><span
+                                        class="andes-button__content"><svg class="arrow"
+                                            xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12">
+                                            <path fill="none" fill-rule="evenodd" stroke="#3483FA" stroke-width="1.5"
+                                                d="M11 4L6 9 1 4"></path>
+                                        </svg></span></button>20:00hr</div>
+                            <div class="etd-table__column performance sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child remaining_time success" style="width:25%"><span
+                                            class="sub-grid__child__content success">11:31hr</span></span><span
+                                        class="sub-grid__child pending_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">2401</span></span><span
+                                        class="sub-grid__child processed_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">7</span></span><span
+                                        class="sub-grid__child sla danger" style="width:25%"><span
+                                            class="sub-grid__child__content danger">0.29%</span></span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column first_column"><button type="button"
+                                    class="andes-button dropdown-button andes-button--small andes-button--transparent"><span
+                                        class="andes-button__content"><svg class="arrow"
+                                            xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12">
+                                            <path fill="none" fill-rule="evenodd" stroke="#3483FA" stroke-width="1.5"
+                                                d="M11 4L6 9 1 4"></path>
+                                        </svg></span></button>21:00hr</div>
+                            <div class="etd-table__column performance sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child remaining_time success" style="width:25%"><span
+                                            class="sub-grid__child__content success">12:31hr</span></span><span
+                                        class="sub-grid__child pending_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">3114</span></span><span
+                                        class="sub-grid__child processed_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">10</span></span><span
+                                        class="sub-grid__child sla danger" style="width:25%"><span
+                                            class="sub-grid__child__content danger">0.32%</span></span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column first_column"><button type="button"
+                                    class="andes-button dropdown-button andes-button--small andes-button--transparent"><span
+                                        class="andes-button__content"><svg class="arrow"
+                                            xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12">
+                                            <path fill="none" fill-rule="evenodd" stroke="#3483FA" stroke-width="1.5"
+                                                d="M11 4L6 9 1 4"></path>
+                                        </svg></span></button>22:00hr</div>
+                            <div class="etd-table__column performance sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child remaining_time success" style="width:25%"><span
+                                            class="sub-grid__child__content success">13:31hr</span></span><span
+                                        class="sub-grid__child pending_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">2719</span></span><span
+                                        class="sub-grid__child processed_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">4</span></span><span
+                                        class="sub-grid__child sla danger" style="width:25%"><span
+                                            class="sub-grid__child__content danger">0.15%</span></span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column first_column"><button type="button"
+                                    class="andes-button dropdown-button andes-button--small andes-button--transparent"><span
+                                        class="andes-button__content"><svg class="arrow"
+                                            xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12">
+                                            <path fill="none" fill-rule="evenodd" stroke="#3483FA" stroke-width="1.5"
+                                                d="M11 4L6 9 1 4"></path>
+                                        </svg></span></button>23:00hr</div>
+                            <div class="etd-table__column performance sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child remaining_time success" style="width:25%"><span
+                                            class="sub-grid__child__content success">14:31hr</span></span><span
+                                        class="sub-grid__child pending_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">15</span></span><span
+                                        class="sub-grid__child processed_groups normal" style="width:25%"><span
+                                            class="sub-grid__child__content normal">-</span></span><span
+                                        class="sub-grid__child sla danger" style="width:25%"><span
+                                            class="sub-grid__child__content danger">0.00%</span></span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="processes-table">
+                <div class="etd-table">
+                    <div class="etd-table__row header">
+                        <div class="etd-table__header sub-grid planning" align="center"><span class="main-column"><span
+                                    class="label">Planning</span><span class="total">(6111)</span></span><span
+                                class="sub-grid__container"><span class="sub-grid__child" style="width:50%"><span
+                                        class="label">Ready to wave</span><span class="total">(6111)</span></span><span
+                                    class="sub-grid__child" style="width:50%"><span class="label">Waving</span><span
+                                        class="total">(0)</span></span></span></div>
+                        <div class="etd-table__header sub-grid picking" align="center"><span class="main-column"><span
+                                    class="label">Picking</span><span class="total">(7095)</span></span><span
+                                class="sub-grid__container"><span class="sub-grid__child" style="width:100%"><span
+                                        class="label">Picking</span><span class="total">(7095)</span></span></span>
+                        </div>
+                        <div class="etd-table__header sub-grid consolidation" align="center"><span
+                                class="main-column"><span class="label">Consolidation</span><span
+                                    class="total">(250)</span></span><span class="sub-grid__container"><span
+                                    class="sub-grid__child" style="width:50%"><span class="label">Ready to
+                                        group</span><span class="total">(203)</span></span><span class="sub-grid__child"
+                                    style="width:50%"><span class="label">Grouping</span><span
+                                        class="total">(47)</span></span></span></div>
+                        <div class="etd-table__header sub-grid packing" align="center"><span class="main-column"><span
+                                    class="label">Packing</span><span class="total">(12859)</span></span><span
+                                class="sub-grid__container"><span class="sub-grid__child" style="width:50%"><span
+                                        class="label">Ready to pack</span><span class="total">(9630)</span></span><span
+                                    class="sub-grid__child" style="width:50%"><span class="label">Packed</span><span
+                                        class="total">(3229)</span></span></span></div>
+                        <div class="etd-table__header sub-grid shipping" align="center"><span class="main-column"><span
+                                    class="label">Shipping</span><span class="total">(84046)</span></span><span
+                                class="sub-grid__container"><span class="sub-grid__child"
+                                    style="width:33.333333333333336%"><span class="label">HU in</span><span
+                                        class="total">(4406)</span></span><span class="sub-grid__child"
+                                    style="width:33.333333333333336%"><span class="label">HU closed</span><span
+                                        class="total">(13453)</span></span><span class="sub-grid__child"
+                                    style="width:33.333333333333336%"><span class="label">Shipped</span><span
+                                        class="total">(66187)</span></span></span></div>
+                    </div>
+                    <div class="etd-table__body process-table-expired-orders">
+                        <div class="etd-table__row body main-row">
+                            <div class="process-status-group planning"><span class="process-status-group__item"
+                                    aria-label="ready to wave"><a
+                                        class="andes-typography status-process andes-typography--type-body andes-typography--size-m andes-typography--color-primary"
+                                        href="/reports/units?etd_to=2022-12-22T23:59:59&amp;etd_from=2022-11-01T01:00:00&amp;status=pending,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD">129</a></span><span
+                                    class="process-status-group__item" aria-label="waving"><a
+                                        class="andes-typography andes-typography--type-body andes-typography--size-m andes-typography--color-primary"
+                                        href="#">-</a></span></div>
+                            <div class="process-status-group picking"><span class="process-status-group__item"
+                                    aria-label="picking"><a
+                                        class="andes-typography andes-typography--type-body andes-typography--size-m andes-typography--color-primary"
+                                        href="#">-</a></span></div>
+                            <div class="process-status-group consolidation"><span class="process-status-group__item"
+                                    aria-label="ready to group"><a
+                                        class="andes-typography andes-typography--type-body andes-typography--size-m andes-typography--color-primary"
+                                        href="#">-</a></span><span class="process-status-group__item"
+                                    aria-label="grouping"><a
+                                        class="andes-typography status-process andes-typography--type-body andes-typography--size-m andes-typography--color-primary"
+                                        href="/reports/units?etd_to=2022-12-22T23:59:59&amp;etd_from=2022-11-01T01:00:00&amp;status=grouping,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD">1</a></span>
+                            </div>
+                            <div class="process-status-group packing"><span class="process-status-group__item"
+                                    aria-label="ready to pack"><a
+                                        class="andes-typography status-process andes-typography--type-body andes-typography--size-m andes-typography--color-primary"
+                                        href="/reports/units?etd_to=2022-12-22T23:59:59&amp;etd_from=2022-11-01T01:00:00&amp;status=to_pack,packing,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD">1</a></span><span
+                                    class="process-status-group__item" aria-label="packed"><a
+                                        class="andes-typography status-process andes-typography--type-body andes-typography--size-m andes-typography--color-primary"
+                                        href="/reports/units?etd_to=2022-12-22T23:59:59&amp;etd_from=2022-11-01T01:00:00&amp;status=packed,to_document,documented,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD">945</a></span>
+                            </div>
+                            <div class="process-status-group shipping"><span class="process-status-group__item"
+                                    aria-label="hu in"><a
+                                        class="andes-typography status-process andes-typography--type-body andes-typography--size-m andes-typography--color-primary"
+                                        href="/reports/units?etd_to=2022-12-22T23:59:59&amp;etd_from=2022-11-01T01:00:00&amp;status=to_dispatch,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD">65</a></span><span
+                                    class="process-status-group__item" aria-label="hu closed"><a
+                                        class="andes-typography status-process andes-typography--type-body andes-typography--size-m andes-typography--color-primary"
+                                        href="/reports/units?etd_to=2022-12-22T23:59:59&amp;etd_from=2022-11-01T01:00:00&amp;status=to_out,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD">104</a></span><span
+                                    class="process-status-group__item" aria-label="shipped"><a
+                                        class="andes-typography status-process andes-typography--type-body andes-typography--size-m andes-typography--color-primary"
+                                        href="/reports/units?etd_to=2022-12-22T23:59:59&amp;etd_from=2022-11-01T01:00:00&amp;status=out,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD">151</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T00:00:00&amp;etd_to=2022-12-23T00:00:00&amp;status=pending,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">2</a><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T00:00:00&amp;etd_to=2022-12-23T00:00:00&amp;status=to_pack,packing,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">5</a><a
+                                        href="/reports/units?etd_from=2022-12-23T00:00:00&amp;etd_to=2022-12-23T00:00:00&amp;status=packed,to_document,documented,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">94</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T00:00:00&amp;etd_to=2022-12-23T00:00:00&amp;status=to_dispatch,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">11</a><span class="sub-grid__child"
+                                        style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">22731</span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T01:00:00&amp;etd_to=2022-12-23T01:00:00&amp;status=pending,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">10</a><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><a
+                                        href="/reports/units?etd_from=2022-12-23T01:00:00&amp;etd_to=2022-12-23T01:00:00&amp;status=packed,to_document,documented,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">15</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T01:00:00&amp;etd_to=2022-12-23T01:00:00&amp;status=to_dispatch,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">1</a><a
+                                        href="/reports/units?etd_from=2022-12-23T01:00:00&amp;etd_to=2022-12-23T01:00:00&amp;status=to_out,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">1</a><span class="sub-grid__child"
+                                        style="width:50%">8434</span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T02:00:00&amp;etd_to=2022-12-23T02:00:00&amp;status=pending,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">2</a><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><a
+                                        href="/reports/units?etd_from=2022-12-23T02:00:00&amp;etd_to=2022-12-23T02:00:00&amp;status=packed,to_document,documented,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">26</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T02:00:00&amp;etd_to=2022-12-23T02:00:00&amp;status=to_dispatch,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">6</a><a
+                                        href="/reports/units?etd_from=2022-12-23T02:00:00&amp;etd_to=2022-12-23T02:00:00&amp;status=to_out,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">3</a><span class="sub-grid__child"
+                                        style="width:50%">9516</span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T03:00:00&amp;etd_to=2022-12-23T03:00:00&amp;status=pending,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">14</a><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T03:00:00&amp;etd_to=2022-12-23T03:00:00&amp;status=to_pack,packing,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">3</a><a
+                                        href="/reports/units?etd_from=2022-12-23T03:00:00&amp;etd_to=2022-12-23T03:00:00&amp;status=packed,to_document,documented,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">100</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T03:00:00&amp;etd_to=2022-12-23T03:00:00&amp;status=to_dispatch,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">22</a><a
+                                        href="/reports/units?etd_from=2022-12-23T03:00:00&amp;etd_to=2022-12-23T03:00:00&amp;status=to_out,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">1</a><span class="sub-grid__child"
+                                        style="width:50%">20277</span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><a
+                                        href="/reports/units?etd_from=2022-12-23T06:00:00&amp;etd_to=2022-12-23T06:00:00&amp;status=packed,to_document,documented,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">1</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">909</span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><a
+                                        href="/reports/units?etd_from=2022-12-23T07:00:00&amp;etd_to=2022-12-23T07:00:00&amp;status=packed,to_document,documented,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">2</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">304</span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T08:00:00&amp;etd_to=2022-12-23T08:00:00&amp;status=to_pack,packing,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">2</a><a
+                                        href="/reports/units?etd_from=2022-12-23T08:00:00&amp;etd_to=2022-12-23T08:00:00&amp;status=packed,to_document,documented,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">7</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">1662</span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T09:00:00&amp;etd_to=2022-12-23T09:00:00&amp;status=pending,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">2</a><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T09:00:00&amp;etd_to=2022-12-23T09:00:00&amp;status=to_pick,picked,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">4</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T09:00:00&amp;etd_to=2022-12-23T09:00:00&amp;status=to_pack,packing,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">14</a><a
+                                        href="/reports/units?etd_from=2022-12-23T09:00:00&amp;etd_to=2022-12-23T09:00:00&amp;status=packed,to_document,documented,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">29</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T09:00:00&amp;etd_to=2022-12-23T09:00:00&amp;status=to_dispatch,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">952</a><a
+                                        href="/reports/units?etd_from=2022-12-23T09:00:00&amp;etd_to=2022-12-23T09:00:00&amp;status=to_out,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">1005</a><span class="sub-grid__child"
+                                        style="width:50%">2301</span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T12:00:00&amp;etd_to=2022-12-23T12:00:00&amp;status=pending,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">29</a><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T12:00:00&amp;etd_to=2022-12-23T12:00:00&amp;status=to_pick,picked,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">3</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T12:00:00&amp;etd_to=2022-12-23T12:00:00&amp;status=to_pack,packing,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">7</a><a
+                                        href="/reports/units?etd_from=2022-12-23T12:00:00&amp;etd_to=2022-12-23T12:00:00&amp;status=packed,to_document,documented,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">347</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T12:00:00&amp;etd_to=2022-12-23T12:00:00&amp;status=to_dispatch,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">537</a><span class="sub-grid__child"
+                                        style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">3</span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T13:00:00&amp;etd_to=2022-12-23T13:00:00&amp;status=pending,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">221</a><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T13:00:00&amp;etd_to=2022-12-23T13:00:00&amp;status=to_pick,picked,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">4</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T13:00:00&amp;etd_to=2022-12-23T13:00:00&amp;status=to_pack,packing,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">104</a><a
+                                        href="/reports/units?etd_from=2022-12-23T13:00:00&amp;etd_to=2022-12-23T13:00:00&amp;status=packed,to_document,documented,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">207</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T13:00:00&amp;etd_to=2022-12-23T13:00:00&amp;status=to_dispatch,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">591</a><a
+                                        href="/reports/units?etd_from=2022-12-23T13:00:00&amp;etd_to=2022-12-23T13:00:00&amp;status=to_out,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">7282</a><span class="sub-grid__child"
+                                        style="width:50%">10</span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T14:00:00&amp;etd_to=2022-12-23T14:00:00&amp;status=pending,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">274</a><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T14:00:00&amp;etd_to=2022-12-23T14:00:00&amp;status=to_pick,picked,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">96</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T14:00:00&amp;etd_to=2022-12-23T14:00:00&amp;status=to_pack,packing,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">274</a><a
+                                        href="/reports/units?etd_from=2022-12-23T14:00:00&amp;etd_to=2022-12-23T14:00:00&amp;status=packed,to_document,documented,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">692</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T14:00:00&amp;etd_to=2022-12-23T14:00:00&amp;status=to_dispatch,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">584</a><a
+                                        href="/reports/units?etd_from=2022-12-23T14:00:00&amp;etd_to=2022-12-23T14:00:00&amp;status=to_out,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">4720</a><span class="sub-grid__child"
+                                        style="width:50%">1</span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T16:00:00&amp;etd_to=2022-12-23T16:00:00&amp;status=pending,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">124</a><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T16:00:00&amp;etd_to=2022-12-23T16:00:00&amp;status=to_pick,picked,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">222</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T16:00:00&amp;etd_to=2022-12-23T16:00:00&amp;status=to_group,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">60</a><a
+                                        href="/reports/units?etd_from=2022-12-23T16:00:00&amp;etd_to=2022-12-23T16:00:00&amp;status=grouping,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">14</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T16:00:00&amp;etd_to=2022-12-23T16:00:00&amp;status=to_pack,packing,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">627</a><a
+                                        href="/reports/units?etd_from=2022-12-23T16:00:00&amp;etd_to=2022-12-23T16:00:00&amp;status=packed,to_document,documented,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">171</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T16:00:00&amp;etd_to=2022-12-23T16:00:00&amp;status=to_dispatch,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">463</a><span class="sub-grid__child"
+                                        style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">2</span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T17:00:00&amp;etd_to=2022-12-23T17:00:00&amp;status=pending,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">94</a><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T17:00:00&amp;etd_to=2022-12-23T17:00:00&amp;status=to_pick,picked,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">754</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T17:00:00&amp;etd_to=2022-12-23T17:00:00&amp;status=to_group,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">143</a><a
+                                        href="/reports/units?etd_from=2022-12-23T17:00:00&amp;etd_to=2022-12-23T17:00:00&amp;status=grouping,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">31</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T17:00:00&amp;etd_to=2022-12-23T17:00:00&amp;status=to_pack,packing,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">1358</a><a
+                                        href="/reports/units?etd_from=2022-12-23T17:00:00&amp;etd_to=2022-12-23T17:00:00&amp;status=packed,to_document,documented,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">337</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T17:00:00&amp;etd_to=2022-12-23T17:00:00&amp;status=to_dispatch,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">825</a><a
+                                        href="/reports/units?etd_from=2022-12-23T17:00:00&amp;etd_to=2022-12-23T17:00:00&amp;status=to_out,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">244</a><span class="sub-grid__child"
+                                        style="width:50%">2</span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T18:00:00&amp;etd_to=2022-12-23T18:00:00&amp;status=pending,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">31</a><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T18:00:00&amp;etd_to=2022-12-23T18:00:00&amp;status=to_pick,picked,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">655</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><a
+                                        href="/reports/units?etd_from=2022-12-23T18:00:00&amp;etd_to=2022-12-23T18:00:00&amp;status=grouping,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">2</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T18:00:00&amp;etd_to=2022-12-23T18:00:00&amp;status=to_pack,packing,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">2547</a><a
+                                        href="/reports/units?etd_from=2022-12-23T18:00:00&amp;etd_to=2022-12-23T18:00:00&amp;status=packed,to_document,documented,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">833</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T18:00:00&amp;etd_to=2022-12-23T18:00:00&amp;status=to_dispatch,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">375</a><span class="sub-grid__child"
+                                        style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">4</span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T18:30:00&amp;etd_to=2022-12-23T18:30:00&amp;status=pending,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">37</a><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T18:30:00&amp;etd_to=2022-12-23T18:30:00&amp;status=to_pick,picked,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">608</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T18:30:00&amp;etd_to=2022-12-23T18:30:00&amp;status=to_pack,packing,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">1672</a><a
+                                        href="/reports/units?etd_from=2022-12-23T18:30:00&amp;etd_to=2022-12-23T18:30:00&amp;status=packed,to_document,documented,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">368</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T18:30:00&amp;etd_to=2022-12-23T18:30:00&amp;status=to_dispatch,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">37</a><a
+                                        href="/reports/units?etd_from=2022-12-23T18:30:00&amp;etd_to=2022-12-23T18:30:00&amp;status=to_out,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">197</a><span class="sub-grid__child"
+                                        style="width:50%">7</span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T19:00:00&amp;etd_to=2022-12-23T19:00:00&amp;status=pending,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">70</a><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T19:00:00&amp;etd_to=2022-12-23T19:00:00&amp;status=to_pick,picked,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">1785</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T19:00:00&amp;etd_to=2022-12-23T19:00:00&amp;status=to_pack,packing,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">2934</a><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T19:00:00&amp;etd_to=2022-12-23T19:00:00&amp;status=to_dispatch,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">1</a><span class="sub-grid__child"
+                                        style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">3</span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T20:00:00&amp;etd_to=2022-12-23T20:00:00&amp;status=pending,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">42</a><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T20:00:00&amp;etd_to=2022-12-23T20:00:00&amp;status=to_pick,picked,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">2276</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T20:00:00&amp;etd_to=2022-12-23T20:00:00&amp;status=to_pack,packing,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">83</a><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">7</span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T21:00:00&amp;etd_to=2022-12-23T21:00:00&amp;status=pending,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">2426</a><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T21:00:00&amp;etd_to=2022-12-23T21:00:00&amp;status=to_pick,picked,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">688</a></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">10</span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T22:00:00&amp;etd_to=2022-12-23T22:00:00&amp;status=pending,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">2718</a><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T22:00:00&amp;etd_to=2022-12-23T22:00:00&amp;status=to_dispatch,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">1</a><span class="sub-grid__child"
+                                        style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">4</span></span></div>
+                        </div>
+                    </div>
+                    <div class="etd-table__body" style="height:50px">
+                        <div class="etd-table__row body main-row">
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><a
+                                        href="/reports/units?etd_from=2022-12-23T23:00:00&amp;etd_to=2022-12-23T23:00:00&amp;status=pending,temp_unavailable&amp;group_type=order&amp;report_type=order&amp;origin=ETD"
+                                        class="sub-grid__child" style="width:50%">15</a><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                            <div class="etd-table__column sub-grid"><span class="sub-grid__container"><span
+                                        class="sub-grid__child" style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span><span class="sub-grid__child"
+                                        style="width:50%">-</span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</hmtl>

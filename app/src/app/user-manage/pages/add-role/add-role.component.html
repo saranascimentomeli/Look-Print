@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <div class="row" *ngFor="let role of roles">
+        <div class="col">
+            <mat-checkbox (change)="RolesEscolhidas($event, role)" [checked]="role.user > 0" class="example-margin">{{role.descricao}}</mat-checkbox>
+            &nbsp;
+        </div>
+    </div>
+    <hr>
+    <div class="row mt-3 w100">
+        <div class="col" style="text-align: end;">
+            <button type="button" (click)="Salvar()" mat-raised-button style="background-color: #343A40; color: white;">Salvar</button>
+        </div>
+    </div>
+</div>

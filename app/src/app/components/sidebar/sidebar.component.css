@@ -1,0 +1,17 @@
+mat-nav-list {
+    align-content: center;
+}
+
+mat-nav-list :hover {
+    background-color: transparent;
+    color: black;
+}
+
+.menu-item {
+    color: #adb5bd;
+    font-weight: lighter;
+}
+
+mat-toolbar {
+    background-color: #AADB1D !important;
+}

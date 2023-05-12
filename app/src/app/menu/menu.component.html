@@ -1,0 +1,28 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav id="NavMenu" #drawer class="sidenav " fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+        <app-sidebar></app-sidebar>
+    </mat-sidenav>
+    <mat-sidenav-content id="divgeralmenu">
+        <!-- Add Content Here -->
+        <mat-toolbar style="background-color: #FFFFFF;">
+            <button class="color" type="button" aria-label="Toggle sidenav" (click)="drawer.toggle()" mat-icon-button
+                *ngIf="isHandset$ | async">
+                <mat-icon class="white-icon" aria-label="Side nav toggle icon">menu</mat-icon>
+            </button>
+            <!-- <span class="text-white-p">{{this.cadTitle}}</span> -->
+            <span class="example-spacer"></span>
+            <button mat-icon-button (click)="drawer.toggle()" class="color">
+                <mat-icon>fullscreen_exit</mat-icon>
+            </button>
+            <button mat-icon-button routerLink="" (click)="Logout()" class="color">
+                <mat-icon>exit_to_app</mat-icon>
+            </button>
+        </mat-toolbar>
+        <div style="height: 90%;" class="container-fluid mt-2">
+            <router-outlet></router-outlet>
+            <!-- <app-cadastro-pessoa></app-cadastro-pessoa> -->
+            <!-- <app-cadastro-pet></app-cadastro-pet> -->
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

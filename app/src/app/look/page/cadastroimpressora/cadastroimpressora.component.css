@@ -1,0 +1,241 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.input-wrapper {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input[type="text"] {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+.input-imp {
+    border: 1px solid #ccc;
+}
+
+.input-banc {
+    border: 1px solid green;
+}
+
+.btn-voltar {
+    background-color: #ccc;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.codigo-impressora {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    color: #444;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+
+.wrapper {
+    margin-top: 30px;
+    width: auto !important;
+    ;
+    height: 350px;
+
+}
+
+/* .container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+} */
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.bar {
+    position: relative;
+    width: calc(10% - 10px);
+    height: 100%;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* background: url('../../../../assets/toboga.png'); */
+    /* background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center; */
+}
+
+
+
+.bar-fill {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, #AADB1D, green);
+    transition: height 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    border-radius: 5px;
+    align-self: flex-end;
+
+}
+
+
+
+.bar-fill.animate {
+    margin-top: 0;
+}
+
+.small {
+    width: calc(10% - 10px);
+    height: 50%;
+    align-self: flex-start;
+    border: 2px solid;
+    /* background: url('../../../../assets/toboga.png'); */
+}
+
+.bar-label {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    font-family: Arial, sans-serif;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.info-container .info:first-child {
+    font-weight: bold;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.info-container .info:not(:first-child) {
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.bar-total {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: black;
+    font-family: Arial, sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.info {
+    font-size: 12px;
+    color: #FFF;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+
+.title {
+    top: -3px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.package {
+    width: 50%;
+    height: 10%;
+    background: url('../../../../assets/pacote.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation-name: package-fall;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    transition: transform 1s ease-in-out;
+    transform: translateY(-450%);
+}
+
+@keyframes package-fall {
+    0% {
+        transform: translateY(-450%);
+    }
+
+    100% {
+        transform: translateY(450%);
+    }
+}
+
+/* Definindo o atraso de animação de cada pacote */
+.bar:nth-child(odd) .package {
+    animation-delay: calc(0s + 0.1s * (1 + (10 - 1) / 2 - 1));
+}
+
+.bar:nth-child(even) .package {
+    animation-delay: calc(0.1s * (1 + (10 - 1) / 2 - 1));
+}

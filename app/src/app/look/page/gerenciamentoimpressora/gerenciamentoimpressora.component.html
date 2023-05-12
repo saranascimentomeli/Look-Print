@@ -1,0 +1,55 @@
+<div style="background-color: lightgray; width: 100%; height:60px">
+
+    <div class="row">
+
+        <div class="col-md-12" style="text-align: center;margin-top: -10px;">
+            <b>
+                <p style="font-size: 50px;">Look Printer</p>
+            </b>
+
+        </div>
+
+    </div>
+
+</div>
+<mat-divider style="width: 100%;"></mat-divider>
+<div style="background-color: lightgray; width: 100%; height:100px;">
+
+    <div class="row">
+
+        <div class="col-md-1">
+            <b>
+                <p style="font-size: 50px;">Seq</p>
+            </b>
+        </div>
+        <div class="col-md-3">
+            <b>
+                <p style="font-size: 50px;">IP</p>
+            </b>
+        </div>
+
+        <div class="col-md-2">
+            <b>
+                <p style="font-size: 50px;">Potencia</p>
+            </b>
+        </div>
+
+        <div class="col-md-3">
+            <b>
+                <p style="font-size: 50px;">Impressora</p>
+            </b>
+        </div>
+
+        <div class="col-md-3">
+            <b>
+                <p style="font-size: 50px;">Status</p>
+            </b>
+        </div>
+
+    </div>
+
+    <br />
+</div>
+
+<app-listaimpressora [obj]="obj" *ngFor="let obj of this.objetos">
+</app-listaimpressora>

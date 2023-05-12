@@ -1,0 +1,20 @@
+.DENTRO_PRAZO {
+    background-color: green;
+    color: white;
+    width: 100%;
+    height: 100px;
+}
+
+.FORA_PRAZO {
+    background-color: red;
+    color: white;
+    width: 100%;
+    height: 100px;
+}
+
+.ATENCAO_PRAZO {
+    background-color: orange;
+    width: 100%;
+
+    height: 100px;
+}
